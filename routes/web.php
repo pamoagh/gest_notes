@@ -8,7 +8,10 @@ use App\Http\Controllers\NoteController;
 
 // Route pour la page d'accueil
 Route::get('/', function () {
-    return Inertia::render('Welcome'); // Vérifie que le composant React "Welcome" existe
+    return Inertia::render('Welcome'); 
+});
+Route::get('/', function () {
+    return Inertia::render('Home');
 });
 
 // Ressources pour les unités d'enseignement
