@@ -2,9 +2,10 @@
 
 namespace App\Providers;
 
+use Illuminate\Support\ServiceProvider;
 use Inertia\Inertia;
 
-class AppServiceProvider extends Inertia
+class AppServiceProvider extends ServiceProvider
 {
     /**
      * Register any application services.
@@ -21,5 +22,6 @@ class AppServiceProvider extends Inertia
     {
         Inertia::share([
             'appName' => config('app.name'),
-        ]);    }
+        ]);
+    }
 }
